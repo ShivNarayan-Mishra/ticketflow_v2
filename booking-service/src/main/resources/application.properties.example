@@ -1,0 +1,17 @@
+spring.datasource.url=jdbc:postgresql://localhost:5432/ticketflow
+spring.datasource.username=postgres
+spring.datasource.password=ENTER_YOUR_PASSWORD_HERE
+
+# ddl-auto=none because schema.sql already created the resources table -
+
+spring.jpa.hibernate.ddl-auto=none
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
+spring.jpa.show-sql=true
+
+server.port=8080
+springdoc.swagger-ui.path=/swagger-ui.html
+
+# Used when running directly (IntelliJ/mvn), NOT inside docker-compose.
+# docker-compose overrides these via environment variables instead .
+spring.data.redis.host=localhost
+spring.data.redis.port=6379

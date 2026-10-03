@@ -1,0 +1,3 @@
+db.url=jdbc:postgresql://localhost:5432/ticketflow
+db.user=postgres
+db.password=ENTER_YOUR_PASSWORD_HERE
